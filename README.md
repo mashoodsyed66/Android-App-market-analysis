@@ -43,6 +43,12 @@ print(apps.info())
 
 ```
 
+![2 appsinfo](https://github.com/mashoodsyed66/Android-App-market-analysis/assets/65015378/de5e63ea-b595-4dfb-8cff-d8b3aa30b5bb)
+
+From below image we can see that the unwanted characters have been removed and the data have been cleaned.
+
+![2](https://github.com/mashoodsyed66/Android-App-market-analysis/assets/65015378/a60846bc-a91e-4ef6-8ce7-fef6da5f3ea9)
+
 ## 3. Correcting data types
 <p>From the previous task we noticed that <code>Installs</code> and <code>Price</code> were categorized as <code>object</code> data type (and not <code>int</code> or <code>float</code>) as we would like. This is because these two columns originally had mixed input types: digits and special characters. To know more about Pandas data types, read <a href="https://datacarpentry.org/python-ecology-lesson/04-data-types-and-format/">this</a>.</p>
 <p>The four features that we will be working with most frequently henceforth are <code>Installs</code>, <code>Size</code>, <code>Rating</code> and <code>Price</code>. While <code>Size</code> and <code>Rating</code> are both <code>float</code> (i.e. purely numerical data types), we still need to work on <code>Installs</code> and <code>Price</code> to make them numeric.</p>
