@@ -68,6 +68,7 @@ apps['Price'] = apps['Price'].astype(float)
 #print(apps.dtypes)
 apps.head()
 ```
+![3](https://github.com/mashoodsyed66/Android-App-market-analysis/assets/65015378/ee9fd2e8-e499-43c7-a041-c93664da4ca0)
 
 ## 4. Exploring app categories
 <p>With more than 1 billion active users in 190 countries around the world, Google Play continues to be an important distribution platform to build a global audience. For businesses to get their apps in front of users, it's important to make them more quickly and easily discoverable on Google Play. To improve the overall search experience, Google has introduced the concept of grouping apps into categories.</p>
@@ -104,7 +105,6 @@ apps.head()
 <p>Let's filter out these junk apps and re-do our visualization.</p>
 
 ## 9. Popularity of paid apps vs free apps
-**This text will be bold**
 
 <p>For apps in the Play Store today, there are five types of pricing strategies: free, freemium, paid, paymium, and subscription. Let's focus on free and paid apps only. Some characteristics of free apps are:</p>
 <ul>
