@@ -1,5 +1,6 @@
-<center>
 
+<center>
+    
 # Google Play Store apps and reviews
 
 </center>
@@ -52,6 +53,21 @@ From below image we can see that the unwanted characters have been removed and t
 ## 3. Correcting data types
 <p>From the previous task we noticed that <code>Installs</code> and <code>Price</code> were categorized as <code>object</code> data type (and not <code>int</code> or <code>float</code>) as we would like. This is because these two columns originally had mixed input types: digits and special characters. To know more about Pandas data types, read <a href="https://datacarpentry.org/python-ecology-lesson/04-data-types-and-format/">this</a>.</p>
 <p>The four features that we will be working with most frequently henceforth are <code>Installs</code>, <code>Size</code>, <code>Rating</code> and <code>Price</code>. While <code>Size</code> and <code>Rating</code> are both <code>float</code> (i.e. purely numerical data types), we still need to work on <code>Installs</code> and <code>Price</code> to make them numeric.</p>
+
+
+ ```python
+import numpy as np
+
+# Convert Installs to float data type
+apps['Installs'] = apps['Installs'].astype(float)
+
+# Convert Price to float data type
+apps['Price'] = apps['Price'].astype(float)
+
+# Checking dtypes of the apps dataframe
+#print(apps.dtypes)
+apps.head()
+```
 
 ## 4. Exploring app categories
 <p>With more than 1 billion active users in 190 countries around the world, Google Play continues to be an important distribution platform to build a global audience. For businesses to get their apps in front of users, it's important to make them more quickly and easily discoverable on Google Play. To improve the overall search experience, Google has introduced the concept of grouping apps into categories.</p>
